@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/* 表单 */
+.ui-form .box {
+    display: block;
+    position: relative;
+    border-radius: 5px;
+    margin: 10px 0;
+    line-height: 40px;
+    padding: 0 15px 0 36px;
+    background-color: #fff;
+    border: 1px solid #e8e7e4;
+}
+
+.ui-form .tips{
+    color: #aaa;
+}
+
+.ui-form h4 {
+    color: #444;
+    font-weight: normal;
+}
+
+.ui-form .box:before, .ui-form .box:after {
+    position: absolute;
+    color: #aaa;
+    font-family: icon;
+    top: 0;
+}
+
+.ui-form .box:before {
+    font-size: 20px;
+    left: 8px;
+}
+
+.ui-form .box.select:after {
+    content: "\e608";
+    font-size: 13px;
+    right: 8px;
+}
+
+.ui-form .box.select:active {
+    background-color: #efefef;
+}
+
+.ui-form .name:before {
+    content: "\e628";
+}
+
+.ui-form .type:before {
+    content: "\e64f";
+}
+
+.ui-form .address:before {
+    content: "\e610";
+}
+
+.ui-form .description:before {
+    content: "\e642";
+}
+
+.ui-form .contact:before {
+    content: "\e611";
+}
+
+.ui-form .telphone:before {
+    content: "\e602";
+}
+
+.ui-form .blob {
+    padding: 0;
+}
+
+.ui-form .blob>span {
+    margin-left: 36px;
+}
+
+.ui-form .blob p {
+    padding: 0 15px;
+}
+
+.ui-form .blob textarea {
+    height: 80px;
+}
+
+.ui-form>.err:before {
+    color: #e64340;
+}
+
+.ui-form label.error {
+    position: absolute;
+    right: 8px;
+    top: 0;
+    font-family: icon;
+    font-size: 16px;
+    color: #e64340;
+}
+.ui-form label.error:before {
+    content: "\e63d";
+}

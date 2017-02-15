@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/* layer弹层统一样式名 */
+.ui-layer {
+    font-family: 微软雅黑, Microsoft YaHei, Arial, Verdana, Tahoma, Sans-serif;
+}
+.ui-dialog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+}
+.ui-error {
+    border: none;
+    background-color: #e64340;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 32px;
+    height: 32px;
+    border-radius: 0;
+    width: 100% !important;
+}
+.ui-error>*{
+    padding: 0;
+    line-height: inherit;
+}
+.ui-tip {
+    width: auto !important;
+    max-width: 90% !important;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,.7);
+    color: #fff;
+}
+.ui-tip>* {
+    padding: 10px 20px;
+}

@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* dl列表 */
+dl {
+    display: flex;
+}
+dl>dt {
+    width: 80px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+dl>dd {
+    flex: 1;
+}
+
+/* ul列表 */
+ul:before, ul:after {
+    display: block;
+    text-align: center;
+    line-height: 3em;
+}
+ul.loading:after {
+    content: "正在加载...";
+}
+ul.nomore:after {
+    content: "没有更多";
+}
+ul:empty:before {
+    content: "暂无数据";
+}
+ul.loading:empty:before {
+    content: "";
+}

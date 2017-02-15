@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* 全局样式 */
+html, body, a, input, textarea {
+    font: normal 16px/1.5em 微软雅黑, Microsoft YaHei, Arial, Verdana, Tahoma, Sans-serif;
+}
+
+html,body,p,i,u,a,b,s,h4,h5,h6,h1,h2,h3,ul,li,dl,dd,dt,label,img,a,input,textarea {
+    margin: 0;
+    padding: 0;
+}
+
+ul,li,dl,dd,dt {
+    display: block;
+    list-style: none;
+    overflow: hidden;
+}
+
+a, input, img, textarea {
+    text-decoration: none;
+    text-shadow: none;
+    outline: none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+img {display: block;}
+
+body {
+    color: #444;
+}
+
+a {
+    color: #888;
+}
+
+input, textarea, select {
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+/* 字体图标 */
+@font-face {
+    font-family: 'icon';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/iconfont.woff') format('woff'),
+         url('../font/iconfont.ttf') format('truetype'),
+         url('../font/iconfont.svg#iconfont') format('svg');
+}
+/* 
+@font-face {
+  font-family: 'icon';  project id："178812"
+  src: url('//at.alicdn.com/t/font_o1y1zngqh69a4i.eot');
+  src: url('//at.alicdn.com/t/font_o1y1zngqh69a4i.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_o1y1zngqh69a4i.woff') format('woff'),
+  url('//at.alicdn.com/t/font_o1y1zngqh69a4i.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_o1y1zngqh69a4i.svg#icon') format('svg');
+}
+ */

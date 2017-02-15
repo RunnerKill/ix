@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+/* 普通整行按钮 */
+a.btn, input[type="submit"], input[type="button"] {
+    display: block;
+    margin: 30px auto 0 auto;
+    padding: 0;
+    line-height: 2.5em;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: .5em;
+    text-align: center;
+    border-radius: 35px;
+    border: none;
+    box-shadow: none;
+    background-color: #f2c53d;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#f2c53d), to(#f2c53d));
+}
+a.btn:active, input[type="submit"]:active, input[type="button"]:active {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #a08124;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#a08124), to(#a08124));
+}
+
+/* 圆形浮动按钮 */
+a.btn-cell {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    width: 51px;
+    height: 51px;
+    font: normal 50px/56px icon;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px 1px #ccc;
+    background-color: #fff;
+    color: #f2c53d;
+}
+a.btn-cell:active {
+    color: #a08124;
+    background-color: #ccc;
+}
+.ui-cells a.btn-cell:nth-child(1) {right: 20px;}
+.ui-cells a.btn-cell:nth-child(2) {right: 90px;}
+.ui-cells a.btn-cell:nth-child(3) {right: 160px;}
+.ui-cells a.btn-cell:nth-child(4) {right: 230px;}
+.ui-cells a.btn-cell:nth-child(5) {right: 300px;}
+a.btn-cell.add:before {content: "\e667";}
+a.btn-cell.refresh:before {content: "\e64c";}
+@keyframes rotation
+{
+    from   {transform: rotate(0deg);-webkit-transform: rotate(0deg);}
+    to  {transform: rotate(360deg);-webkit-transform: rotate(360deg);}
+}
+
+@-webkit-keyframes rotation
+{
+    from   {transform: rotate(0deg);-webkit-transform: rotate(0deg);}
+    to  {transform: rotate(360deg);-webkit-transform: rotate(360deg);}
+}
+a.btn-cell.refresh {
+    
+}
+a.btn-cell.refresh.rotating {
+    animation: rotation 1s linear infinite;
+    -webkit-animation: rotation 1s linear infinite;
+}
+
